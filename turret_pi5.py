@@ -8,6 +8,42 @@ A motion tracking turret with improved compatibility for:
 - Modern libraries
 
 Original project: https://www.youtube.com/watch?v=HoRPWUl_sF8
+
+REQUIREMENTS:
+============
+Install the following packages before running this script:
+
+# Computer Vision
+opencv-python>=4.12.0
+imutils>=0.5.4
+
+# Motor Control (CircuitPython - recommended for Pi 5)
+adafruit-circuitpython-motorkit>=1.6.18
+adafruit-circuitpython-motor>=3.4.17
+
+# Alternative motor control (legacy compatibility)
+# Uncomment if you prefer the older Adafruit MotorHAT library
+# Adafruit-Motor-HAT-Python-Library
+
+# GPIO Control for Raspberry Pi 5
+# Try RPi.GPIO first, fallback to lgpio if needed
+RPi.GPIO>=0.7.1
+
+# Alternative GPIO for Pi 5 (uncomment if RPi.GPIO doesn't work)
+# lgpio>=0.2.0
+
+# Core dependencies (usually included with Python 3)
+# These should be available by default but listed for completeness
+# threading (built-in)
+# time (built-in)
+# sys (built-in)
+# atexit (built-in)
+# contextlib (built-in)
+# termios (built-in on Unix systems)
+
+INSTALLATION:
+============
+pip install opencv-python>=4.12.0 imutils>=0.5.4 adafruit-circuitpython-motorkit>=1.6.18 adafruit-circuitpython-motor>=3.4.17 RPi.GPIO>=0.7.1
 """
 
 try:
