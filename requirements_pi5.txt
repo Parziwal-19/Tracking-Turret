@@ -1,0 +1,30 @@
+# Requirements for Tracking Turret - Raspberry Pi 5 & Python 3 Version
+
+# Computer Vision
+opencv-python>=4.5.0
+imutils>=0.5.4
+
+# Motor Control (CircuitPython - recommended for Pi 5)
+adafruit-circuitpython-motorkit>=1.6.0
+adafruit-circuitpython-motor>=3.4.0
+
+# Alternative motor control (legacy compatibility)
+# Uncomment if you prefer the older Adafruit MotorHAT library
+# Adafruit-Motor-HAT-Python-Library
+
+# GPIO Control for Raspberry Pi 5
+# Try RPi.GPIO first, fallback to lgpio if needed
+RPi.GPIO>=0.7.0
+
+# Alternative GPIO for Pi 5 (uncomment if RPi.GPIO doesn't work)
+# lgpio>=0.2.0
+
+# Core dependencies (usually included with Python 3)
+# These should be available by default but listed for completeness
+# threading (built-in)
+# time (built-in)
+# sys (built-in)
+# atexit (built-in)
+# contextlib (built-in)
+# termios (built-in on Unix systems)
+
